@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --dark1: #131313;
+    --dark2: #424242;
+    --dark3: #727272;
+    --dark4: #A1A1A1;
+    --dark5: #D0D0D0;
+    --dark6: #E7E7E7;
+    --dark7: #F3F3F3;
+    --color: #FF900E;
+    --bg: rgba(255, 144, 14, 0.1);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+body {
+    overflow-x: hidden;
+}
+.btn {
+    background-color: var(--color);
+    padding: 20px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* header section's style is here */
+
+/* navbar section */
+header {
+    padding: 3.125rem 15rem 2.8125rem 15rem;
+    background-color: var(--bg);
+}
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .navbar h3 {
+    font-size: 2.8125rem;
+    font-weight: 700;
+    color: var(--dark1);
+}
+header .navbar ul {
+    display: flex;
+    gap: 40px;
+}
+header .navbar ul li a {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--dark2);
+}
+header .banner {
+    text-align: center;
+    margin-top: 6.375rem;
+}
+header .banner .content {
+    width: 53.875rem;
+    margin: 0 auto;
+}
+header .banner .content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 75px;
+    color: var(--dark1);
+}
+header .banner .content p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--dark3);
+    margin: 30px 0;
+}
+header .banner img {
+    margin-top: 50px;
+    width: 100%;
+}
+
+
+
+/* responsive */
+@media only screen and (max-width: 992px) {
+    header {
+        padding: 2.5rem 1rem;
+    }
+    header .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    header .navbar h3 {
+        font-size: 2rem;
+    }
+    header .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header .banner .content {
+        width: 100%;
+    }
+}
