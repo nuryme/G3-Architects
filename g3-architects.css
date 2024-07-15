@@ -228,6 +228,16 @@ header .banner img {
     flex-direction: column;
     gap: 5px;
 }
+.facts .container .fact h2 {
+    font-weight: 600;
+    font-size: 2.8125rem;
+    color: var(--dark2);
+}
+.facts .container .fact p {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--dark3);
+}
 .facts .container .fact img {
     height: 45px;
     width: 45px;
@@ -247,16 +257,44 @@ header .banner img {
     filter: grayscale(100%);
 }
 
+/* footer section */
+footer {
+    margin: 0 240px 216px 240px;
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    padding: 40px 0;
+    text-align: center;
+}
+footer p {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--dark2);
+}
+
 
 
 
 /* responsive */
+@media screen and (max-width: 1300px){
+    .love {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
 @media only screen and (max-width: 992px) {
-    header {
+    header, 
+    .love , 
+    .facts, 
+    .sponsor {
         padding: 2.5rem 1rem;
     }
+    footer {
+        margin: 50px;
+    }
 
-    header .navbar {
+    header .navbar , 
+    .love {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -277,6 +315,15 @@ header .banner img {
         text-align: center;
         margin: 50px 0;
     }
+    .facts {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponsor .container {
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -287,5 +334,23 @@ header .banner img {
     .teams .img-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
+    }
+    .love .img-container .btn {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+    .facts .container {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    footer {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .facts .container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
     }
 }
