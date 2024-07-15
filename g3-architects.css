@@ -207,6 +207,33 @@ header .banner img {
     color: white;
 }
 
+/* facts section */
+.facts {
+    padding: 0 240px 180px 240px;
+}
+.facts .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 80px 50px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.facts .container .fact {
+    border-radius: 8px;
+    border: 1px solid var(--color);
+    width: 241.83px;
+    height: 241.83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.facts .container .fact img {
+    height: 45px;
+    width: 45px;
+}
+
 
 
 /* responsive */
